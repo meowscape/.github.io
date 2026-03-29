@@ -1,0 +1,100 @@
+:root {
+    --darkpinktext: #89566B;
+    --pink1: #EAD1DB;
+    --pink2: #D3A4B7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.shapka {
+    padding: 30;
+}
+
+.shapka_container, .hero_container {
+    max-width: 1042px;
+    margin-inline: auto;
+}
+
+.shapka_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.shapka_button, .hero_button_good, .hero_button_bad {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--darkpinktext);
+    padding: 19px 16px;
+    background: var(--pink2);
+    border-radius: 25px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+}
+
+button:focus {
+    outline: none;
+}
+
+.shapka_button:hover, .hero_button_good:hover, .hero_button_bad:hover {
+    opacity: 80%;
+}
+
+.hero {
+    padding: 50px 0;
+}
+
+.hero_container {
+    position: relative;
+}
+
+.heroimage {
+    position: absolute;
+    top: 1;
+    right: -430px;
+    width: 500px;
+    height: auto;
+}
+
+.hero_title {
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: -2.5px;
+    line-height: 77px;
+    color: #89566B;
+    background: var(--pink1);
+    border-radius: 25px;
+    padding: 19px 59px;
+}
+
+.hero_buttons {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.hero_text {
+    background: var(--pink1);
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.53px;
+    color: var(--darkpinktext);
+    padding: 19px 59px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
